@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-const API = axios.create({baseURL: "http://localhost:5000"});
+const API = axios.create({baseURL: "https://recallyourmemories-akshay01.herokuapp.com/"});
 
 // This method is used for middleware in backend and it will execute before
 // every request method. It will send a token back to the backend so that it
