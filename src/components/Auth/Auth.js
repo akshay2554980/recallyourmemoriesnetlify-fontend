@@ -8,7 +8,7 @@ import Icon from "./Icon";
 import {useDispatch} from "react-redux";
 import {useHistory} from "react-router-dom";
 import {signUp, signIn} from "../../actions/auth";
-import {client_Id} from "../../env.js";
+// import {client_Id} from "../../env.js";
 
 
 
@@ -92,7 +92,7 @@ const Auth = () => {
                         {isSignUp ? "Sign Up" : "Sign In"}
                     </Button>
                     <GoogleLogin 
-                        clientId={client_Id}
+                        clientId={process.env.clientId}
                         render={(renderProps) => (
                         <Button 
                            variant="contained"
