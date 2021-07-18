@@ -8,9 +8,10 @@ import Icon from "./Icon";
 import {useDispatch} from "react-redux";
 import {useHistory} from "react-router-dom";
 import {signUp, signIn} from "../../actions/auth";
+import dotenv from "dotenv";
 // import {client_Id} from "../../env.js";
 
-
+dotenv.config();
 
 const Auth = () => {
     const classes = useStyles();
