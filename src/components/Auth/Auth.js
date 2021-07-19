@@ -8,7 +8,6 @@ import Icon from "./Icon";
 import {useDispatch} from "react-redux";
 import {useHistory} from "react-router-dom";
 import {signUp, signIn} from "../../actions/auth";
-import client_Id from "../../env";
 const Auth = () => {
     const classes = useStyles();
     const [isSignUp, setSignUp] = useState(false);
@@ -89,7 +88,7 @@ const Auth = () => {
                         {isSignUp ? "Sign Up" : "Sign In"}
                     </Button>
                     <GoogleLogin 
-                        clientId={client_Id}
+                        clientId="330982893236-rgj132m0kksid10g45pvkk4hse7hr4h1.apps.googleusercontent.com"
                         render={(renderProps) => (
                         <Button 
                            variant="contained"
